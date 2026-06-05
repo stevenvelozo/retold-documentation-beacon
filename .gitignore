@@ -1,0 +1,10 @@
+node_modules/
+package-lock.json
+
+# Per-folder sync state (merge base + content mirror). Local to each working copy.
+.docsync/
+
+# Logs and scratch
+*.log
+_*.js
+.DS_Store

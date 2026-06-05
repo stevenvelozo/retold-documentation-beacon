@@ -1,0 +1,32 @@
+{
+	"name": "retold-documentation-beacon",
+	"version": "0.0.1",
+	"description": "Bidirectional sync between a documentation folder tree and a Retold Docs Lake. Watches a folder with chokidar and reconciles with the platform over /1.0/docs/* through a git 3-way merge. Runs standalone or supervised by Ultravisor.",
+	"main": "source/Documentation-Beacon.js",
+	"bin": {
+		"retold-documentation-beacon": "bin/retold-documentation-beacon.js"
+	},
+	"scripts": {
+		"test": "npx mocha -u tdd -R spec test/*_tests.js"
+	},
+	"keywords": [
+		"retold",
+		"documentation",
+		"docs-lake",
+		"sync",
+		"beacon",
+		"ultravisor",
+		"chokidar"
+	],
+	"author": "Steven Velozo <steven@velozo.com>",
+	"license": "MIT",
+	"dependencies": {
+		"chokidar": "^4.0.3"
+	},
+	"optionalDependencies": {
+		"ultravisor-beacon": "*"
+	},
+	"devDependencies": {
+		"mocha": "^10.0.0"
+	}
+}
